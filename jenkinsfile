@@ -1,0 +1,30 @@
+pipeline{
+  stages{
+    stage('Checkout'){
+      steps{
+        echo 'Pulling code from repository..'
+      }
+    }
+
+    stage('Build'){
+      steps{
+        echo 'Building application'
+      }
+    }
+
+    stage('test'){
+      steps{
+        echo 'Running automated tests'
+      }
+    }
+
+    stage('Deploy'){
+      steps{
+        echo 'Deploying application to production'
+      }
+    }
+
+  }
+}
+
+    
